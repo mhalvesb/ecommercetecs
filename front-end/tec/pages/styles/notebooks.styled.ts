@@ -13,10 +13,7 @@ export const Sections = styled.section`
         width: 30%;
     }
 
-    div{
-        background-color: #555;
-        width: 70%;
-    }
+    
 
     ul{
         list-style-type: none;
@@ -29,4 +26,29 @@ export const Sections = styled.section`
         cursor: pointer;
         margin: 10px 0px;
     }
+`;
+
+
+export const ProductsInfos = styled.div`
+    display: flex;
+    flex-direction: column;
+    background-color: #111;
+    width: 100%;
+    p{
+        margin: 0;
+        padding: 0;
+        color: #999;
+    }
+
+    
+`;
+
+export const ProductDiv = styled.div`
+        display: flex;
+        align-self: flex-end;
+        p{
+            color: #000;
+            margin-right: 5px;
+        }
+    
 `;
