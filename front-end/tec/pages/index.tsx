@@ -1,7 +1,7 @@
 'use client'
 
 import "../global.modules.css";
-import { Content, FirstHeader, FirstUl, LineInfos, MainContent, NavSec, ProductBox, Products, SecondContent, SecondUl, Stars, SupportSec } from "./styles/index.styled";
+import { Content, FirstHeader, FirstUl, LastSection, LineInfos, MainContent, NavSec, ProductBox, Products, SecondContent, SecondUl, Stars, SupportSec } from "./styles/index.styled";
 import NotebookImg from "../assets/images/Notebook_PNG_Clip_Art-3074.png";
 import Acessories from "../assets/images/Gaming-Headset-PNG-HD-Image-1.png"
 import Cameras from "../assets/images/photo_camera_PNG101601.png"
@@ -10,7 +10,9 @@ import Samsung from "../assets/images/samsungnotebook.png";
 import Headset from "../assets/images/headsetpng.png";
 import Intelbras from "../assets/images/camerapng.png";
 import Tablet from "../assets/images/36-tablet-png-image.png";
-
+import Fb from "../assets/images/facebook.png";
+import Insta from "../assets/images/instagram.png";
+import Twitter from "../assets/images/twitter.png";
 export default function Home(){
     return(
         <div>
@@ -19,10 +21,10 @@ export default function Home(){
             
             <FirstUl>
                 <li><h1>Logotipo</h1></li>
-                <li>Acessories</li>
-                <li>Laptop</li>
-                <li>Smartphones</li>
-                <li>Cameras</li>
+                <li><p>Acessories</p></li>
+                <li><p>Notebook</p></li>
+                <li><p>Smartphones</p></li>
+                <li><p>Cameras</p></li>
             </FirstUl>
 
             <SecondUl>
@@ -118,7 +120,34 @@ export default function Home(){
                <button>Entrar em contato</button>                      
                </div>
             </SupportSec>
-
+            <LastSection>
+                <ul>
+                    <li><h1>Logotipo</h1></li>
+                    <li>Alguma coisa falando sobre a empresa</li>
+                </ul>
+                <ul>
+                    <li><h1>ACCESS</h1></li>
+                    <li>Acessories</li>
+                    <li>Notebooks</li>
+                    <li>Smartphone</li>
+                    <li>Camera</li>
+                </ul>
+                <ul>
+                    <li><h1>Social Media</h1></li>
+                    <li><img src={Fb.src}></img>Facebook</li>
+                    <li><img src={Insta.src}></img>Instagram</li>
+                    <li><img src={Twitter.src}></img>Twitter</li>
+                </ul>
+                <ul>
+                   <li><h1>Contact</h1></li> 
+                   <li>(21) 99999-9999</li>
+                   <li>tecnologyecommerce@gmail.com</li>
+                </ul>
+                <ul>
+                   <li><h1>Location</h1></li> 
+                   <li>Rua barão das flores, 2000, Centro, Rio de Janeiro - RJ</li>
+                </ul>
+            </LastSection>
         </div>
         
         

@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import Banner from "../../assets/images/pixelcut-export.jpeg";
 import Support from "../../assets/images/360_F_330901393_aOO2hcxJLCsahxjLcenapfQFqbsZT5Uu.jpg";
+
+
+
 export const Content = styled.div`
     width: 100%;
     height: 100vh;
@@ -40,6 +43,16 @@ export const FirstUl = styled.ul`
         text-transform: uppercase;
         display: flex;
         align-items: center;
+    }
+
+    p{
+        margin: 0;
+        padding: 10px;
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
+        &:hover{
+            border-bottom: 1px solid #fff;
+        }
     }
     
 `;
@@ -245,4 +258,37 @@ export const SupportSec = styled.section`
         margin-top: 30px;
         cursor: pointer;
     }
+`;
+
+export const LastSection = styled.footer`
+    width: 100%;
+    height: auto;
+    background-color: #111;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    ul{
+        list-style-type: none;
+        color: #fff;
+        padding: 0;
+        margin: 0;
+        flex: 1;
+    }
+    li{
+        cursor: pointer;
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+    }
+    h1{
+        margin: 0;
+        padding: 0;
+    }
+
+    img{
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+    }
+
 `;
