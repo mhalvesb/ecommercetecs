@@ -1,7 +1,7 @@
 'use client'
 
 import "../global.modules.css";
-import { Content, FirstHeader, FirstUl, LastSection, LineInfos, MainContent, NavSec, ProductBox, Products, SecondContent, SecondUl, Stars, SupportSec } from "./styles/index.styled";
+import { Content,LastSection, LineInfos, MainContent, NavSec, ProductBox, Products, SecondContent, Stars, SupportSec } from "./styles/index.styled";
 import NotebookImg from "../assets/images/Notebook_PNG_Clip_Art-3074.png";
 import Acessories from "../assets/images/Gaming-Headset-PNG-HD-Image-1.png"
 import Cameras from "../assets/images/photo_camera_PNG101601.png"
@@ -13,25 +13,14 @@ import Tablet from "../assets/images/36-tablet-png-image.png";
 import Fb from "../assets/images/facebook.png";
 import Insta from "../assets/images/instagram.png";
 import Twitter from "../assets/images/twitter.png";
+
+import MyHeader from "../components/header/header";
+
 export default function Home(){
     return(
         <div>
             <Content>
-            <FirstHeader>
-            
-            <FirstUl>
-                <li><h1>Logotipo</h1></li>
-                <li><p>Acessories</p></li>
-                <li><p>Notebook</p></li>
-                <li><p>Smartphones</p></li>
-                <li><p>Cameras</p></li>
-            </FirstUl>
-
-            <SecondUl>
-                <li>Login</li>
-                <li>CART</li>
-            </SecondUl>
-            </FirstHeader>
+            <MyHeader/>
             <LineInfos>
                 <ul>
                     <li>Fast Delivery</li>
