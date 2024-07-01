@@ -31,7 +31,7 @@ export default function Home(){
             <SecondContent>
                <MyNavSec/>
                 <h1>New Products</h1>
-                <MyProducts/>
+                <MyProducts initialPage={true}/>
             </SecondContent>
 
             <SupportSec>

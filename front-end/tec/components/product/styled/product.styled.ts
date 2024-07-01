@@ -12,17 +12,19 @@ justify-content: space-between;
 text-align: center;
 text-transform: uppercase;
 position: relative;
+padding: 0 10vw;
     img{
-        height: 250px;
+        height: 150px;
     }
 
     p{
         color: #999999;
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 400;
         margin: 10px 0px;
     }
     h2{
+        font-size: 18px;
         font-weight: 900;
         margin: 10px 0px;
     }
@@ -30,10 +32,11 @@ position: relative;
         display: block;
         color: #FF0000;
         font-weight: 700;
+        font-size: 14px;
         margin: 10px 0px;
     }
     button{
-        width: 90px;
+        width: 70px;
         height: 30px;
         background-color: #000;
         border: none;
@@ -46,18 +49,18 @@ position: relative;
 `;
 
 export const ProductBox = styled.div`
-        width: 400px;
-        height: 500px;
+        width: 300px;
+        height: 380px;
         background-color: #fff;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        margin: 20px 0px;
 `;
 export const Stars = styled.div`
 margin-top: auto;
     img{
-        
         height: 16px;
     }
 `;

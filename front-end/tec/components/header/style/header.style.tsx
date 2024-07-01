@@ -8,6 +8,7 @@ align-items: center;
 justify-content: space-between;
 width: 100%;
 height: auto;
+padding: 0 10vw;
 img{
     width: auto;
     height: 125px;

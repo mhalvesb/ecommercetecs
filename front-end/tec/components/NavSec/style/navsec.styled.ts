@@ -7,18 +7,18 @@ export const NavSec = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
-padding: 0px 20px;
+padding: 0px 10vw;
     div{
         margin-top: 60px;
         background-color: #999;
-        width: 500px;
-        height: 300px;
+        width: 400px;
+        height: 200px;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
         img{
-            height: 275px;
+            height: 175px;
         }
 
         span{
@@ -43,12 +43,12 @@ padding: 0px 20px;
 
         
         h2{
-            font-size: 40px;
+            font-size: 30px;
             margin: 0;
             padding: 0;
         }
         p{
-            font-size: 20px;
+            font-size: 10px;
         }
     }
 `;

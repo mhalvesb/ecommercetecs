@@ -16,8 +16,9 @@ export const Content = styled.div`
 
 
 export const LineInfos = styled.div`
-    width: 100%;
     height: 60px;
+    width: 100%;
+    padding: 0 10vw;
     background-color: #111;
     position: absolute;
     bottom: 0;
@@ -25,7 +26,8 @@ export const LineInfos = styled.div`
     ul{
         display: flex;
         list-style-type: none;
-        justify-content: space-around;
+        justify-content: space-between;
+        padding: 0;
     }
 
     li{
@@ -48,7 +50,7 @@ export const SecondContent = styled.section`
 
     h1{
         font-size: 32px;
-        padding-left: 20px;
+        padding-left: 10vw;
         margin: 40px 0px;
         text-transform: uppercase;
         font-weight: 900;

@@ -2,15 +2,17 @@ import styled from "styled-components";
 
 export const Main = styled.main`
 width: 100%;
+background: #D9D9D9;
+
 `;
 
 
 export const Sections = styled.section`
     display: flex;
-
+    padding-top: 50px;
     aside{
-        background-color: #999;
         width: 30%;
+        margin-left: 5vw;
     }
 
     
@@ -18,13 +20,17 @@ export const Sections = styled.section`
     ul{
         list-style-type: none;
         padding: 0;
-        margin: 35px 0px;
+        margin: 0;
+        margin-bottom: 35px;
         color: #000;
     }
-
+    h1{
+        margin:0;
+        padding: 0;
+    }
     li{
         cursor: pointer;
-        margin: 10px 0px;
+        margin-bottom: 15px
     }
 `;
 
@@ -32,7 +38,6 @@ export const Sections = styled.section`
 export const ProductsInfos = styled.div`
     display: flex;
     flex-direction: column;
-    background-color: #111;
     width: 100%;
     p{
         margin: 0;
@@ -51,4 +56,11 @@ export const ProductDiv = styled.div`
             margin-right: 5px;
         }
     
+`;
+
+export const SectionProducts = styled.section`
+display: grid;
+grid-template-columns: auto auto auto auto;
+
+flex-wrap: wrap;
 `;
