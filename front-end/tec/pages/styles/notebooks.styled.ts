@@ -30,8 +30,28 @@ export const Sections = styled.section`
     }
     li{
         cursor: pointer;
-        margin-bottom: 15px
+        margin: 15px 0px;
+
+        
     }
+`;
+
+export const LiItem = styled.li<{active: boolean}>`
+    
+        cursor: pointer;
+        margin: 15px 0px;
+
+    
+
+        
+        span{
+            color: ${props => props.active ? "#960018" : "#000"};
+            &:hover{
+                color: #960018;
+            }
+        }
+        
+
 `;
 
 
@@ -55,12 +75,16 @@ export const ProductDiv = styled.div`
             color: #000;
             margin-right: 5px;
         }
+
+        select{
+            padding: 5px;
+            font-weight: 100;
+        }
     
 `;
 
 export const SectionProducts = styled.section`
 display: grid;
 grid-template-columns: auto auto auto auto;
-
 flex-wrap: wrap;
 `;

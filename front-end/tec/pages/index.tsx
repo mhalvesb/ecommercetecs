@@ -11,6 +11,7 @@ import Twitter from "../assets/images/twitter.png";
 import MyHeader from "../components/header/header";
 import MyNavSec from "../components/NavSec/navsec";
 import MyProducts from "@/components/product/product";
+import Notebook from "../assets/images/products/02d79574d176c9774e77b7749bd1945b.png";
 export default function Home(){
     return(
         <div>
@@ -31,7 +32,7 @@ export default function Home(){
             <SecondContent>
                <MyNavSec/>
                 <h1>New Products</h1>
-                <MyProducts initialPage={true}/>
+                <MyProducts initialPage={true} productImage={Notebook} productInfo="" productName="" productPrice={999}/>
             </SecondContent>
 
             <SupportSec>

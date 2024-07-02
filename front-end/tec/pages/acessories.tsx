@@ -1,31 +1,23 @@
-import Image from "next/image";
-import "../global.modules.css";
-import styles from "./page.module.css";
+
+
+import { useState } from "react";
+import { Sections, Main, LiItem, ProductDiv, ProductsInfos, SectionProducts } from "./styles/notebooks.styled";
 import MyHeader from "../components/header/header";
-import { LiItem, Main, ProductDiv, ProductsInfos, SectionProducts, Sections } from "./styles/notebooks.styled";
-import MyNavSec from "@/components/NavSec/navsec";
 import MyProducts from "@/components/product/product";
 import Estrela from "../assets/images/estrela.png";
 import EstrelaContorno from "../assets/images/estrelapreta.png";
-import Notebook from "../assets/images/samsungnotebook.png";
-import Notebook1 from "../assets/images/products/02d79574d176c9774e77b7749bd1945b.png";
-import Notebook2 from "../assets/images/products/185662ec00d8f36cf7303708ff649cd4.png";
-import Notebook3 from "../assets/images/products/a68c168c0330d56da8fb4c7e1bd72dd4.png";
-import Notebook4 from "../assets/images/products/1.png";
-import Notebook5 from "../assets/images/products/3.png";
-import { useState } from "react";
 
 
+export default function Acessories(){
 
-export default function App() {
-  const [activeLi, setActiveLi] = useState<number | null>(null);
+    const [activeLi, setActiveLi] = useState<number | null>(null);
 
   const handleClick = (index: number) =>{
     setActiveLi(index === activeLi ? null : index);
   }
 
-  return (
-    <Main>
+    return(
+        <Main>
       <MyHeader/>
       <Sections>
         <aside>
@@ -111,5 +103,5 @@ export default function App() {
         </ProductsInfos>
       </Sections>
     </Main>
-  );
+    )
 }

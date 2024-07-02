@@ -50,7 +50,7 @@ padding: 0 10vw;
 
 export const ProductBox = styled.div`
         width: 300px;
-        height: 380px;
+        height: 400px;
         background-color: #fff;
         display: flex;
         align-items: center;

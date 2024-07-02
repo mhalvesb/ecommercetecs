@@ -1,31 +1,32 @@
-import Image from "next/image";
-import "../global.modules.css";
-import styles from "./page.module.css";
+
+
+import { useState } from "react";
+import { Sections, Main, LiItem, ProductDiv, ProductsInfos, SectionProducts } from "./styles/notebooks.styled";
 import MyHeader from "../components/header/header";
-import { LiItem, Main, ProductDiv, ProductsInfos, SectionProducts, Sections } from "./styles/notebooks.styled";
-import MyNavSec from "@/components/NavSec/navsec";
 import MyProducts from "@/components/product/product";
+import "../global.modules.css";
 import Estrela from "../assets/images/estrela.png";
 import EstrelaContorno from "../assets/images/estrelapreta.png";
-import Notebook from "../assets/images/samsungnotebook.png";
-import Notebook1 from "../assets/images/products/02d79574d176c9774e77b7749bd1945b.png";
-import Notebook2 from "../assets/images/products/185662ec00d8f36cf7303708ff649cd4.png";
-import Notebook3 from "../assets/images/products/a68c168c0330d56da8fb4c7e1bd72dd4.png";
-import Notebook4 from "../assets/images/products/1.png";
-import Notebook5 from "../assets/images/products/3.png";
-import { useState } from "react";
+import Smartphone1 from "../assets/images/products/smartphones/1.png";
+import Smartphone2 from "../assets/images/products/smartphones/2.png";
+import Smartphone3 from "../assets/images/products/smartphones/3.png";
+import Smartphone4 from "../assets/images/products/smartphones/4.png";
+import Smartphone5 from "../assets/images/products/smartphones/5.png";
+import Smartphone6 from "../assets/images/products/smartphones/6.png";
+import Smartphone7 from "../assets/images/products/smartphones/7.png";
+import Smartphone8 from "../assets/images/products/smartphones/8.png";
+import Smartphone9 from "../assets/images/products/smartphones/9.png";
 
+export default function Smartphones(){
 
-
-export default function App() {
-  const [activeLi, setActiveLi] = useState<number | null>(null);
+    const [activeLi, setActiveLi] = useState<number | null>(null);
 
   const handleClick = (index: number) =>{
     setActiveLi(index === activeLi ? null : index);
   }
 
-  return (
-    <Main>
+    return(
+        <Main>
       <MyHeader/>
       <Sections>
         <aside>
@@ -40,7 +41,7 @@ export default function App() {
             <li><h1>Marca</h1></li>
             <LiItem active={activeLi === 5} onClick={() => handleClick(5)}><span>Apple</span></LiItem>
             <LiItem active={activeLi === 6} onClick={() => handleClick(6)}><span>Samsung</span></LiItem>
-            <LiItem active={activeLi === 7} onClick={() => handleClick(7)}><span>Acer</span></LiItem>
+            <LiItem active={activeLi === 7} onClick={() => handleClick(7)}><span>Motorola</span></LiItem>
             <LiItem active={activeLi === 8} onClick={() => handleClick(8)}><span>Asus</span></LiItem>
           </ul>
           
@@ -67,49 +68,70 @@ export default function App() {
           <SectionProducts>
             <MyProducts 
             initialPage={false} 
-            productImage={Notebook} 
-            productInfo="Notebook" 
-            productName="Notebook Samsung I5-4730 4GB RAM SSD 128GB + HDD 500GB" 
-            productPrice={2664}
+            productImage={Smartphone1} 
+            productInfo="Smartphone" 
+            productName="Smartphone Samsung Galaxy S23 256GB Preto 5G 8GB RAM 6,1” Câm Tripla + Selfie 12MP" 
+            productPrice={849}
             />
             <MyProducts 
             initialPage={false} 
-            productImage={Notebook1} 
-            productInfo="Notebook" 
-            productName="Notebook Gamer Lenovo LOQ Intel Core i5 8GB RAM - 512GB SSD 15,6” Full HD NVIDIA RTX 2050 Windows 11" 
-            productPrice={2978}
+            productImage={Smartphone2} 
+            productInfo="Smartphone" 
+            productName="Smartphone Samsung Galaxy A05 128GB Preto 4G Octa-Core 4GB RAM 6,7” Câm. Dupla + Selfie 8MP" 
+            productPrice={1619}
             />
             <MyProducts 
             initialPage={false} 
-            productImage={Notebook2} 
-            productInfo="Notebook" 
-            productName="Notebook Samsung 14 Galaxy Book Go, Snapdragon 7C, 4GB, SSD 128GB, Windows 11 Home" 
+            productImage={Smartphone3} 
+            productInfo="Smartphone" 
+            productName="Smartphone Samsung Galaxy A05 128GB Prata 4G Octa-Core 4GB RAM 6,7” Câm. Dupla + Selfie 8MP" 
+            productPrice={1280}
+            />
+            <MyProducts 
+            initialPage={false} 
+            productImage={Smartphone4} 
+            productInfo="Smartphone" 
+            productName="Smartphone Motorola Moto G24 128GB Grafite 4GB + 4GB RAM Boost 6,6 Câm. Dupla"
+            productPrice={599}
+            />
+            <MyProducts 
+            initialPage={false} 
+            productImage={Smartphone5} 
+            productInfo="Smartphone" 
+            productName="Smartphone Motorola Moto G24 128GB Rosa 4GB + 4GB RAM Boost 6,6 Câm. Dupla + Selfie 8MP Dual Chip" 
+            productPrice={899}
+            />
+            <MyProducts 
+            initialPage={false} 
+            productImage={Smartphone6} 
+            productInfo="Smartphone" 
+            productName="Smartphone Motorola Moto G54 256GB Azul 5G 8GB RAM 6,5 Câm. Dupla + Selfie 16MP Dual Chip" 
+            productPrice={950}
+            />
+            <MyProducts 
+            initialPage={false} 
+            productImage={Smartphone7} 
+            productInfo="Smartphone" 
+            productName="Smartphone Samsung Galaxy A15 6,5 128GB Azul Claro 5G 4GB RAM Câm. Tripla 50MP" 
             productPrice={1500}
             />
             <MyProducts 
             initialPage={false} 
-            productImage={Notebook3} 
-            productInfo="Notebook" 
-            productName="Notebook ASUS Vivobook 15 X1504ZA Intel Core i5 1235U 8GB Ram 512GB SSD Windows 11"
-            productPrice={1599}
+            productImage={Smartphone8} 
+            productInfo="Smartphone" 
+            productName="Smartphone Samsung Galaxy A15 6,5 128GB Azul Escuro 4G 4GB RAM Câm. Tripla 50MP" 
+            productPrice={799}
             />
             <MyProducts 
             initialPage={false} 
-            productImage={Notebook4} 
-            productInfo="Notebook" 
-            productName="Notebook Acer Aspire 3 Intel Core i3 8GB 256GB SSD - 15,6” Full HD Windows 11" 
-            productPrice={2559}
-            />
-            <MyProducts 
-            initialPage={false} 
-            productImage={Notebook5} 
-            productInfo="Notebook" 
-            productName="Notebook Positivo Vision C14 Intel Celeron 4GB - 128GB eMMC 14” HD Windows 11" 
-            productPrice={2999}
+            productImage={Smartphone9} 
+            productInfo="Smartphone" 
+            productName="Smartphone Motorola Moto G84 256GB Grafite 5G Snapdragon 695 8GB" 
+            productPrice={1400}
             />
           </SectionProducts>
         </ProductsInfos>
       </Sections>
     </Main>
-  );
+    )
 }
