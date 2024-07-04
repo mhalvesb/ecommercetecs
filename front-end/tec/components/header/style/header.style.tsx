@@ -20,7 +20,11 @@ export const FirstUl = styled.ul`
     list-style-type: none;
     margin: 0;
     padding: 0;
-
+    color: #fff;
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
     h1{
         margin: 0;
         padding: 0;
@@ -38,8 +42,10 @@ p{
     margin: 0;
     padding: 10px;
     border-bottom: 1px solid transparent;
-    transition: 0.5s;
+    
+    color: #fff;
     &:hover{
+        transition: 0.5s;
         border-bottom: 1px solid #fff;
     }
 }
