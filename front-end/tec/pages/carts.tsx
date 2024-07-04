@@ -1,8 +1,7 @@
-import { CartHeader, CartItems, Container, FreteDiv, Item, ItemImgAndName, Steps, StepsImage, TotalDiv, TotalItems, ProductDiv, Frete, FreteInput } from "./styles/cart.styled";
+import { CartHeader, CartItems, Container, FreteDiv, Item, ItemImgAndName, TotalDiv, TotalItems, ProductDiv, Frete, FreteInput } from "./styles/cart.styled";
 import "../global.modules.css";
+import Steps from "../components/steps/steps";
 
-import Sacola from "../assets/images/icons/sacola-de-comprasazul.png";
-import User from "../assets/images/icons/perfil-de-usuario.png";
 import Notebook from "../assets/images/Samsung-lança-notebook-Galaxy-Book-Go-no-Brasil-845x563.png";
 export default function Cart(){
     return(
@@ -10,14 +9,7 @@ export default function Cart(){
             <CartHeader>
                 <h1>Logotipo</h1>
             </CartHeader>
-            <Steps>
-                <ul>
-                    <hr></hr>
-                    <li><StepsImage style={{borderColor: "#0047AB"}}><img src={Sacola.src}></img></StepsImage>Sacola</li>
-                    <li><StepsImage><img src={User.src}></img></StepsImage>Identificação</li>
-                    <li><StepsImage><img src={User.src}></img></StepsImage>Pagamento</li>
-                </ul>
-            </Steps>
+            <Steps userImage={1}/>
             <CartItems>
                 <h6>Sacola</h6>
                 <Item>

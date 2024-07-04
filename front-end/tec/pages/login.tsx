@@ -49,7 +49,7 @@ export default function Login(){
                         <span>Password</span>
                     </InputText>
                         <button type="submit">LOGIN</button>
-                        <h6>Não possui uma conta? <p onClick={() => handleClickFormVisible(2)}>SIGN UP</p></h6>
+                        <h6>Não possui uma conta? <p onClick={() => handleClickFormVisible(2)}>Cadastrar-se</p></h6>
                     
                 </MyForm>
 

@@ -14,8 +14,8 @@ export default function MyHeader(){
             </FirstUl>
 
             <SecondUl>
-                <li>Login</li>
-                <li>CART</li>
+                <li><Link href="/login">Login</Link></li>
+                <li><Link href="/carts">Carrinho</Link></li>
             </SecondUl>
         </FirstHeader>
     )

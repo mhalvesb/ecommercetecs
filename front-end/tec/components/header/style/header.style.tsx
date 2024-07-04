@@ -13,6 +13,10 @@ img{
     width: auto;
     height: 125px;
 }
+a{
+        text-decoration: none;
+        color: #fff;
+    }
 `;
 
 export const FirstUl = styled.ul`
@@ -21,10 +25,7 @@ export const FirstUl = styled.ul`
     margin: 0;
     padding: 0;
     color: #fff;
-    a{
-        text-decoration: none;
-        color: #fff;
-    }
+   
     h1{
         margin: 0;
         padding: 0;
