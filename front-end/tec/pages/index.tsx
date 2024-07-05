@@ -1,7 +1,7 @@
 'use client'
 
 import "../global.modules.css";
-import { Content,LastSection, LineInfos, MainContent, SecondContent, SupportSec } from "./styles/index.styled";
+import { Content,LastSection, LineInfos, MainContent, NewProductsContent, SecondContent, SupportSec } from "./styles/index.styled";
 
 
 import Fb from "../assets/images/facebook.png";
@@ -32,7 +32,12 @@ export default function Home(){
             <SecondContent>
                <MyNavSec/>
                 <h1>New Products</h1>
-                <MyProducts initialPage={true} productImage={Notebook} productInfo="" productName="" productPrice={999}/>
+                <NewProductsContent>
+                <MyProducts initialPage={true} productImage={Notebook} productInfo="Notebook" productName="Notebook ASUS ROG Strix 8GB RAM 512GB SSD + 512GB HDD" productPrice={999}/>
+                <MyProducts initialPage={true} productImage={Notebook} productInfo="Notebook" productName="Notebook ASUS ROG Strix 8GB RAM 512GB SSD + 512GB HDD" productPrice={999}/>
+                <MyProducts initialPage={true} productImage={Notebook} productInfo="Notebook" productName="Notebook ASUS ROG Strix 8GB RAM 512GB SSD + 512GB HDD" productPrice={999}/>
+                <MyProducts initialPage={true} productImage={Notebook} productInfo="Notebook" productName="Notebook ASUS ROG Strix 8GB RAM 512GB SSD + 512GB HDD" productPrice={999}/>
+                </NewProductsContent>
             </SecondContent>
 
             <SupportSec>

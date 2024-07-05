@@ -130,3 +130,12 @@ export const LastSection = styled.footer`
     }
 
 `;
+
+export const NewProductsContent = styled.div`
+    display: flex;
+    padding: 0 10vw;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+`;

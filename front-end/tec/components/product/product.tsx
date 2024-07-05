@@ -19,7 +19,7 @@ interface MyProductsProps{
 
 export default function MyProducts(props: MyProductsProps){
     return(
-        <Products style={props.initialPage ? {padding: "0 10vw"} : {padding: 0}}>
+        <Products style={props.initialPage ? {padding: "0"} : {padding: 0}}>
                     <ProductBox>
                         <img src={props.productImage.src}></img>
                         <p>{props.productInfo}</p>
@@ -30,6 +30,6 @@ export default function MyProducts(props: MyProductsProps){
                             <img src={Estrelas.src}></img>
                         </Stars>
                     </ProductBox>
-                </Products>
+            </Products>
     )
 }

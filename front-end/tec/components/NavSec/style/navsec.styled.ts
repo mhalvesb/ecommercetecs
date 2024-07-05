@@ -21,7 +21,7 @@ padding: 0px 10vw;
             height: 175px;
         }
 
-        span{
+        a{
             position: absolute;
             height: 100%;
             width: 50%;
